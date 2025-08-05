@@ -1,106 +1,165 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Click Suporte</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Click Suporte - Atendimento remoto de qualidade para seu computador. Rápido, fácil e com pagamento via Pix." />
+  <meta name="keywords" content="suporte remoto, informática, notebook, computador, técnico, click suporte, ajuda PC" />
+  <meta name="author" content="Click Suporte" />
+  <title>Click Suporte | Solução Rápida para seu Computador</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background-color: #f5f5f5;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f7fb;
+      color: #0a4d8c;
     }
     header {
-      background-color: #1a1a1a;
-      padding: 20px;
-      text-align: center;
-    }
-    header img {
-      max-width: 220px;
-      height: auto;
+      background-color: #f4f7fb;
+      padding: 1.5rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      justify-content: center;
+      border-bottom: 2px solid #0a4d8c;
     }
     main {
-      padding: 30px;
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+      color: #0a4d8c;
       text-align: center;
     }
-    .catalogo {
-      margin-top: 30px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
+    p {
+      font-weight: 500;
+      font-size: 1rem;
+      margin-bottom: 1.8rem;
+      text-align: center;
     }
-    .curso {
-      background-color: #fff;
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.6rem;
+      margin-bottom: 1.4rem;
+      border: 2px solid #0a4d8c;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      padding: 20px;
-      max-width: 300px;
-      text-align: left;
+      font-size: 1rem;
+      font-family: 'Poppins', sans-serif;
+      resize: vertical;
+      transition: border-color 0.3s ease;
     }
-    .curso h3 {
-      margin-top: 0;
+    input:focus, textarea:focus {
+      border-color: #004080;
+      outline: none;
     }
-    .curso p {
-      font-size: 15px;
+    button {
+      background-color: #0a4d8c;
+      color: white;
+      padding: 0.85rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 100%;
     }
-    .curso a {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
-      background-color: #25D366;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
+    button:hover {
+      background-color: #004080;
     }
     footer {
-      background-color: #1a1a1a;
-      color: #fff;
       text-align: center;
-      padding: 15px;
-      margin-top: 40px;
+      margin-top: 3rem;
+      color: #0a4d8c;
+      font-weight: 600;
+      font-size: 0.9rem;
     }
-    .social {
-      margin-top: 10px;
-    }
-    .social a {
-      color: #fff;
-      margin: 0 10px;
+    footer a {
+      color: #0a4d8c;
       text-decoration: none;
+      margin: 0 0.5rem;
+    }
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
+  <header aria-label="Logo Click Suporte">
+    <!-- Logo Opção 3 -->
+    <svg width="80" height="80" viewBox="0 0 260 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo Click Suporte">
+      <defs>
+        <linearGradient id="gradBlue3" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#0a4d8c"/>
+          <stop offset="100%" stop-color="#004080"/>
+        </linearGradient>
+      </defs>
 
-  <header>
-    <img src="logo-click-suporte.png" alt="Logo Click Suporte" />
+      <!-- Ícone: círculo + check -->
+      <circle cx="40" cy="40" r="25" fill="url(#gradBlue3)" />
+      <polyline points="28,43 37,52 58,30" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+
+      <!-- Texto -->
+      <text x="85" y="50" font-family="Poppins, sans-serif" font-weight="700" font-size="34" fill="#0a4d8c" letter-spacing="1.2">
+        Click Suporte
+      </text>
+    </svg>
   </header>
 
   <main>
-    <h1>Bem-vindo ao Click Suporte</h1>
-    <p>Seu portal de cursos com suporte técnico especializado!</p>
+    <h1>Solicite seu Suporte Remoto</h1>
+    <p>Preencha o formulário abaixo e envie sua solicitação via WhatsApp. Nosso time responderá rapidinho!</p>
+    <form id="whatsappForm">
+      <label for="nomeWA">Nome Completo</label>
+      <input type="text" id="nomeWA" name="nomeWA" required />
 
-    <div class="catalogo">
-      <div class="curso">
-        <h3>Curso Preparatório CPA 20</h3>
-        <p>Curso presencial e online com material exclusivo e suporte individualizado.</p>
-        <a href="https://wa.me/5521993825550?text=Olá,%20tenho%20interesse%20no%20Curso%20CPA%2020" target="_blank">Falar no WhatsApp</a>
-      </div>
-      <div class="curso">
-        <h3>Curso de Excel Completo</h3>
-        <p>Aprenda do básico ao avançado e domine fórmulas, gráficos e dashboards.</p>
-        <a href="https://wa.me/5521993825550?text=Olá,%20tenho%20interesse%20no%20Curso%20de%20Excel" target="_blank">Falar no WhatsApp</a>
-      </div>
-      <!-- Você pode adicionar mais cursos aqui -->
-    </div>
+      <label for="telefoneWA">Telefone / WhatsApp</label>
+      <input type="tel" id="telefoneWA" name="telefoneWA" required />
+
+      <label for="descricaoWA">Descreva o problema</label>
+      <textarea id="descricaoWA" name="descricaoWA" rows="5" required></textarea>
+
+      <button type="submit">Enviar pelo WhatsApp</button>
+    </form>
   </main>
 
   <footer>
-    <p>&copy; 2025 Click Suporte. Todos os direitos reservados.</p>
-    <div class="social">
-      <a href="https://www.instagram.com/leopeixinho2025/" target="_blank">Instagram</a>
-    </div>
+    <a href="#">Termos de Serviço</a> | <a href="#">Política de Privacidade</a>
+    <p>&copy; 2025 Click Suporte - Todos os direitos reservados.</p>
   </footer>
 
+  <script>
+    const whatsappForm = document.getElementById('whatsappForm');
+    whatsappForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const nome = document.getElementById('nomeWA').value.trim();
+      const telefone = document.getElementById('telefoneWA').value.trim();
+      const descricao = document.getElementById('descricaoWA').value.trim();
+
+      if (!nome || !telefone || !descricao) {
+        alert('Por favor, preencha todos os campos.');
+        return;
+      }
+
+      const mensagem = `Olá, meu nome é ${nome}. Preciso de suporte com o seguinte problema: ${descricao}. Meu contato: ${telefone}`;
+      const url = `https://wa.me/5521993825550?text=${encodeURIComponent(mensagem)}`;
+
+      window.open(url, '_blank');
+    });
+  </script>
 </body>
 </html>
