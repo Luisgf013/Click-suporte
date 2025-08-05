@@ -99,20 +99,37 @@
 </head>
 <body>
   <header aria-label="Logo Click Suporte">
-    <svg width="120" height="60" viewBox="0 0 260 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo Click Suporte" style="display:block; height:auto; max-width:100%;">
+    <svg width="350" height="80" viewBox="0 0 350 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo Click Suporte" style="display:block; height:auto; max-width:100%;">
       <defs>
-        <linearGradient id="gradBlue3" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stop-color="#0a4d8c"/>
-          <stop offset="100%" stop-color="#004080"/>
+        <linearGradient id="gradBlue" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#0a4d8c" />
+          <stop offset="100%" stop-color="#004080" />
         </linearGradient>
       </defs>
 
-      <!-- Ícone: círculo + check -->
-      <circle cx="40" cy="40" r="25" fill="url(#gradBlue3)" />
-      <polyline points="28,43 37,52 58,30" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+      <!-- Círculo com degradê -->
+      <circle cx="40" cy="40" r="25" fill="url(#gradBlue)" />
+
+      <!-- Check com stroke branco -->
+      <polyline
+        points="28,43 37,52 58,30"
+        fill="none"
+        stroke="#fff"
+        stroke-width="4"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
 
       <!-- Texto -->
-      <text x="85" y="50" font-family="Poppins, sans-serif" font-weight="700" font-size="34" fill="#0a4d8c" letter-spacing="1.2">
+      <text
+        x="90"
+        y="52"
+        font-family="Poppins, sans-serif"
+        font-weight="700"
+        font-size="36"
+        fill="#0a4d8c"
+        letter-spacing="1.2"
+      >
         Click Suporte
       </text>
     </svg>
