@@ -2,12 +2,12 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Click Suporte - Atendimento remoto de qualidade para seu computador. Rápido, fácil e com pagamento via Pix." />
   <meta name="keywords" content="suporte remoto, informática, notebook, computador, técnico, click suporte, ajuda PC" />
   <meta name="author" content="Click Suporte" />
   <title>Click Suporte | Solução Rápida para seu Computador</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" />
   <style>
     body {
       margin: 0;
@@ -19,55 +19,67 @@
       background-color: #0a4d8c;
       color: white;
       padding: 1.5rem 2rem;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+    header img {
+      height: 50px;
     }
     header h1 {
       margin: 0;
       font-size: 2rem;
+      font-weight: 700;
     }
-    section {
+    main {
       max-width: 800px;
       margin: 2rem auto;
       padding: 0 1.5rem;
     }
-    .cta {
-      background-color: white;
+    section {
+      background: white;
       border-radius: 8px;
       padding: 2rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: center;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
     .cta h2 {
       margin-bottom: 1rem;
       font-size: 1.8rem;
+      color: #0a4d8c;
     }
     .cta p {
       font-size: 1rem;
       margin-bottom: 1.5rem;
     }
-    .cta a {
-      display: inline-block;
+    .button {
       background-color: #0a4d8c;
       color: white;
       padding: 0.75rem 1.5rem;
       border-radius: 6px;
-      text-decoration: none;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #083d6d;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
       font-weight: 600;
     }
-    .benefits, .how-it-works {
-      background-color: white;
-      border-radius: 8px;
-      padding: 2rem;
-      margin-top: 2rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-    .benefits h3, .how-it-works h3 {
-      margin-top: 0;
-      font-size: 1.5rem;
-      color: #0a4d8c;
-    }
-    .benefits ul, .how-it-works ol {
-      margin: 1rem 0 0 1rem;
+    input, textarea, select {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      font-family: 'Inter', sans-serif;
+      resize: vertical;
     }
     footer {
       background-color: #0a4d8c;
@@ -84,46 +96,96 @@
     footer a:hover {
       text-decoration: underline;
     }
+    nav {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    nav a {
+      color: #0a4d8c;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <header>
+    <img src="https://cdn-icons-png.flaticon.com/512/1250/1250615.png" alt="Logo Click Suporte" />
     <h1>Click Suporte</h1>
-    <p>Seu técnico de informática de confiança</p>
   </header>
 
-  <section class="cta">
-    <h2>Precisa de ajuda com seu computador?</h2>
-    <p>Oferecemos suporte remoto rápido e eficiente para resolver problemas em notebooks e desktops. Sem mensalidades ou enrolação. Você paga apenas pelo atendimento.</p>
-    <a href="https://wa.me/5521993825550" target="_blank">Falar com um técnico agora</a>
-  </section>
+  <main>
+    <section class="cta">
+      <h2>Precisa de ajuda com seu computador?</h2>
+      <p>Oferecemos suporte remoto rápido e eficiente para resolver problemas em notebooks e desktops. Sem mensalidades ou enrolação. Você paga apenas pelo atendimento.</p>
+    </section>
 
-  <section class="how-it-works">
-    <h3>Como funciona</h3>
-    <ol>
-      <li>Você nos chama pelo WhatsApp</li>
-      <li>Descreve o problema de forma simples</li>
-      <li>Um técnico remoto acessa seu computador (com sua autorização)</li>
-      <li>Você realiza o pagamento via Pix após o atendimento</li>
-    </ol>
-  </section>
+    <section>
+      <h3>Formulário de Solicitação (envio via Formspree)</h3>
+      <form action="https://formspree.io/f/yourFormID" method="POST">
+        <label for="nome">Nome Completo</label>
+        <input type="text" id="nome" name="nome" required />
 
-  <section class="benefits">
-    <h3>Por que escolher a Click Suporte?</h3>
-    <ul>
-      <li>Atendimento profissional e transparente</li>
-      <li>Suporte remoto com segurança e agilidade</li>
-      <li>Sem necessidade de visita presencial</li>
-      <li>Pagamento somente após o atendimento</li>
-    </ul>
-  </section>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="_replyto" required />
+
+        <label for="telefone">Telefone / WhatsApp</label>
+        <input type="tel" id="telefone" name="telefone" required />
+
+        <label for="descricao">Descreva o problema</label>
+        <textarea id="descricao" name="descricao" rows="5" required></textarea>
+
+        <button class="button" type="submit">Enviar Solicitação</button>
+      </form>
+    </section>
+
+    <section>
+      <h3>Formulário via WhatsApp</h3>
+      <form id="whatsappForm">
+        <label for="nomeWA">Nome Completo</label>
+        <input type="text" id="nomeWA" name="nomeWA" required />
+
+        <label for="telefoneWA">Telefone / WhatsApp</label>
+        <input type="tel" id="telefoneWA" name="telefoneWA" required />
+
+        <label for="descricaoWA">Descreva o problema</label>
+        <textarea id="descricaoWA" name="descricaoWA" rows="5" required></textarea>
+
+        <button class="button" type="submit">Enviar pelo WhatsApp</button>
+      </form>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Click Suporte - Todos os direitos reservados.</p>
-    <p>
+    <nav>
       <a href="#">Termos de Serviço</a> |
       <a href="#">Política de Privacidade</a>
-    </p>
+    </nav>
+    <p>&copy; 2025 Click Suporte - Todos os direitos reservados.</p>
   </footer>
+
+  <script>
+    const whatsappForm = document.getElementById('whatsappForm');
+    whatsappForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const nome = document.getElementById('nomeWA').value.trim();
+      const telefone = document.getElementById('telefoneWA').value.trim();
+      const descricao = document.getElementById('descricaoWA').value.trim();
+
+      if(!nome || !telefone || !descricao) {
+        alert('Por favor, preencha todos os campos.');
+        return;
+      }
+
+      const mensagem = `Olá, meu nome é ${nome}. Preciso de suporte com o seguinte problema: ${descricao}. Meu contato: ${telefone}`;
+      const url = `https://wa.me/5521993825550?text=${encodeURIComponent(mensagem)}`;
+
+      window.open(url, '_blank');
+    });
+  </script>
 </body>
 </html>
