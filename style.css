@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #004aad;
+  padding: 10px 20px;
+}
+
+.logo {
+  height: 60px;
+  object-fit: contain;
+}
+
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.descricao {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.descricao h1 {
+  font-size: 2rem;
+  color: #004aad;
+  margin-bottom: 10px;
+}
+
+.descricao p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.botao-whatsapp {
+  display: inline-block;
+  background-color: #25d366;
+  color: #fff;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.botao-whatsapp:hover {
+  background-color: #1ebd5a;
+}
+
+.catalogo {
+  margin-bottom: 30px;
+}
+
+.catalogo h2 {
+  font-size: 1.5rem;
+  color: #004aad;
+  margin-bottom: 10px;
+}
+
+.catalogo ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.catalogo li {
+  padding: 8px 0;
+  font-size: 1.1rem;
+}
+
+.sobre h2 {
+  font-size: 1.5rem;
+  color: #004aad;
+  margin-bottom: 10px;
+}
+
+.sobre p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.sobre a {
+  color: #004aad;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #004aad;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
