@@ -2,178 +2,119 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Click Suporte - Atendimento remoto de qualidade para seu computador. Rápido, fácil e com pagamento via Pix." />
-  <meta name="keywords" content="suporte remoto, informática, notebook, computador, técnico, click suporte, ajuda PC" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Click Suporte - Atendimento Técnico</title>
+  <meta name="description" content="Solicite suporte técnico confiável e rápido para celulares, computadores, redes e muito mais. Atendimento via WhatsApp." />
+  <meta name="keywords" content="suporte técnico, informática, celular, computador, atendimento remoto, click suporte" />
   <meta name="author" content="Click Suporte" />
-  <title>Click Suporte | Solução Rápida para seu Computador</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
   <style>
     body {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #f4f7fb;
-      color: #0a4d8c;
+      font-family: 'Roboto', sans-serif;
+      background: #f4f4f4;
+      color: #333;
     }
     header {
-      background-color: #f4f7fb;
-      padding: 1.5rem 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-bottom: 2px solid #0a4d8c;
+      background: #1e88e5;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+    header img {
+      max-height: 60px;
+      margin-bottom: 10px;
     }
     main {
       max-width: 600px;
-      margin: 2rem auto;
-      padding: 0 1.5rem 2rem;
+      margin: 30px auto;
       background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
     h1 {
-      font-size: 2.2rem;
-      margin-bottom: 0.5rem;
-      color: #0a4d8c;
-      text-align: center;
+      font-size: 28px;
+      margin-bottom: 10px;
     }
     p {
-      font-weight: 500;
-      font-size: 1rem;
-      margin-bottom: 1.8rem;
-      text-align: center;
+      font-size: 16px;
+      margin-bottom: 20px;
     }
-    label {
+    form label {
       display: block;
-      margin-bottom: 0.5rem;
-      font-weight: 700;
-      font-size: 1rem;
+      margin-top: 15px;
+      font-weight: bold;
     }
-    input, textarea {
+    input, select, textarea, button {
       width: 100%;
-      padding: 0.6rem;
-      margin-bottom: 1.4rem;
-      border: 2px solid #0a4d8c;
-      border-radius: 8px;
-      font-size: 1rem;
-      font-family: 'Poppins', sans-serif;
-      resize: vertical;
-      transition: border-color 0.3s ease;
-    }
-    input:focus, textarea:focus {
-      border-color: #004080;
-      outline: none;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 15px;
     }
     button {
-      background-color: #0a4d8c;
+      background: #1e88e5;
       color: white;
-      padding: 0.85rem 1.5rem;
       border: none;
-      border-radius: 8px;
-      font-weight: 700;
-      font-size: 1.1rem;
+      margin-top: 20px;
       cursor: pointer;
-      transition: background-color 0.3s ease;
-      width: 100%;
+      transition: background 0.3s ease;
     }
     button:hover {
-      background-color: #004080;
+      background: #1565c0;
     }
     footer {
       text-align: center;
-      margin-top: 3rem;
-      color: #0a4d8c;
-      font-weight: 600;
-      font-size: 0.9rem;
-      padding-bottom: 1.5rem;
-    }
-    footer a {
-      color: #0a4d8c;
-      text-decoration: none;
-      margin: 0 0.5rem;
-    }
-    footer a:hover {
-      text-decoration: underline;
+      font-size: 14px;
+      color: #777;
+      margin: 40px 0 10px;
     }
   </style>
 </head>
 <body>
-  <header aria-label="Logo Click Suporte">
-    <svg width="350" height="80" viewBox="0 0 350 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo Click Suporte" style="display:block; height:auto; max-width:100%;">
-      <defs>
-        <linearGradient id="gradBlue" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stop-color="#0a4d8c" />
-          <stop offset="100%" stop-color="#004080" />
-        </linearGradient>
-      </defs>
-
-      <!-- Círculo com degradê -->
-      <circle cx="40" cy="40" r="25" fill="url(#gradBlue)" />
-
-      <!-- Check com stroke branco -->
-      <polyline
-        points="28,43 37,52 58,30"
-        fill="none"
-        stroke="#fff"
-        stroke-width="4"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-
-      <!-- Texto -->
-      <text
-        x="90"
-        y="52"
-        font-family="Poppins, sans-serif"
-        font-weight="700"
-        font-size="36"
-        fill="#0a4d8c"
-        letter-spacing="1.2"
-      >
-        Click Suporte
-      </text>
-    </svg>
+  <header>
+    <img src="https://i.imgur.com/75bHi2V.png" alt="Logo Click Suporte">
+    <h1>Click Suporte</h1>
+    <p>Atendimento técnico rápido e prático via WhatsApp</p>
   </header>
 
   <main>
-    <h1>Solicite seu Suporte Remoto</h1>
-    <p>Preencha o formulário abaixo e envie sua solicitação via WhatsApp. Nosso time responderá rapidinho!</p>
-    <form id="whatsappForm">
-      <label for="nomeWA">Nome Completo</label>
-      <input type="text" id="nomeWA" name="nomeWA" required />
+    <form id="supportForm">
+      <label for="nome">Seu Nome:</label>
+      <input type="text" id="nome" name="nome" required>
 
-      <label for="telefoneWA">Telefone / WhatsApp</label>
-      <input type="tel" id="telefoneWA" name="telefoneWA" required />
+      <label for="tipo">Tipo de Suporte:</label>
+      <select id="tipo" name="tipo" required>
+        <option value="">Selecione</option>
+        <option value="Celular">Celular</option>
+        <option value="Computador">Computador</option>
+        <option value="Internet / Rede">Internet / Rede</option>
+        <option value="Outro">Outro</option>
+      </select>
 
-      <label for="descricaoWA">Descreva o problema</label>
-      <textarea id="descricaoWA" name="descricaoWA" rows="5" required></textarea>
+      <label for="mensagem">Descreva o problema:</label>
+      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
 
-      <button type="submit">Enviar pelo WhatsApp</button>
+      <button type="submit">Solicitar Atendimento via WhatsApp</button>
     </form>
   </main>
 
   <footer>
-    <a href="#">Termos de Serviço</a> | <a href="#">Política de Privacidade</a>
-    <p>&copy; 2025 Click Suporte - Todos os direitos reservados.</p>
+    <p>&copy; 2025 Click Suporte. Todos os direitos reservados.</p>
+    <p><a href="#termos">Termos de Serviço</a> | <a href="#privacidade">Política de Privacidade</a></p>
   </footer>
 
   <script>
-    const whatsappForm = document.getElementById('whatsappForm');
-    whatsappForm.addEventListener('submit', function(e) {
+    document.getElementById("supportForm").addEventListener("submit", function(e) {
       e.preventDefault();
+      const nome = document.getElementById("nome").value;
+      const tipo = document.getElementById("tipo").value;
+      const mensagem = document.getElementById("mensagem").value;
 
-      const nome = document.getElementById('nomeWA').value.trim();
-      const telefone = document.getElementById('telefoneWA').value.trim();
-      const descricao = document.getElementById('descricaoWA').value.trim();
-
-      if (!nome || !telefone || !descricao) {
-        alert('Por favor, preencha todos os campos.');
-        return;
-      }
-
-      const mensagem = `Olá, meu nome é ${nome}. Preciso de suporte com o seguinte problema: ${descricao}. Meu contato: ${telefone}`;
-      const url = `https://wa.me/5521993825550?text=${encodeURIComponent(mensagem)}`;
-
+      const texto = `Olá, meu nome é ${nome}. Preciso de suporte para: ${tipo}. Detalhes: ${mensagem}`;
+      const url = `https://wa.me/5521993825550?text=${encodeURIComponent(texto)}`;
       window.open(url, '_blank');
     });
   </script>
