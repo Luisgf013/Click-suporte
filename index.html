@@ -1,105 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Click Suporte</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
       margin: 0;
-      padding: 0;
-      text-align: center;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
     }
 
     header {
-      background-color: #1a1a1a;
+      background-color: #1d1d1d;
+      color: white;
       padding: 20px;
+      text-align: center;
     }
 
     header img {
-      height: 60px;
+      max-width: 200px;
+      height: auto;
+    }
+
+    .container {
+      padding: 30px;
+      text-align: center;
     }
 
     h1 {
+      color: #1d1d1d;
+    }
+
+    p {
       color: #333;
-      margin-top: 30px;
+      font-size: 18px;
     }
 
-    form {
-      background: white;
-      padding: 20px;
-      max-width: 400px;
-      margin: 20px auto;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    button {
-      background-color: #25d366;
+    .whatsapp-button {
+      background-color: #25D366;
       color: white;
-      padding: 12px;
-      width: 100%;
-      border: none;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
+      padding: 15px 25px;
+      text-decoration: none;
+      font-size: 20px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 20px;
     }
 
-    button:hover {
-      background-color: #128c7e;
+    .whatsapp-button:hover {
+      background-color: #1ebe5b;
     }
 
     footer {
-      margin-top: 30px;
-      color: #777;
+      background-color: #1d1d1d;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="logotipo.png" alt="Click Suporte">
+    <img src="logotipo.png" alt="Logo Click Suporte">
   </header>
 
-  <h1>Solicite Suporte Técnico</h1>
-
-  <form id="suporteForm">
-    <input type="text" id="nome" placeholder="Seu nome" required />
-    <input type="text" id="problema" placeholder="Descreva o problema" required />
-    <textarea id="detalhes" placeholder="Mais detalhes (opcional)"></textarea>
-    <button type="submit">Enviar pelo WhatsApp</button>
-  </form>
+  <div class="container">
+    <h1>Suporte Técnico Especializado</h1>
+    <p>Precisa de ajuda com seu computador, sistema ou rede? Clique no botão abaixo e fale diretamente conosco pelo WhatsApp.</p>
+    <a class="whatsapp-button" href="https://wa.me/5521993825550" target="_blank">Solicitar Suporte</a>
+  </div>
 
   <footer>
-    © 2025 Click Suporte
+    &copy; 2025 Click Suporte. Todos os direitos reservados.
   </footer>
-
-  <script>
-    document.getElementById("suporteForm").addEventListener("submit", function(e) {
-      e.preventDefault();
-
-      const nome = document.getElementById("nome").value.trim();
-      const problema = document.getElementById("problema").value.trim();
-      const detalhes = document.getElementById("detalhes").value.trim();
-
-      const mensagem = `Olá! Meu nome é ${nome}. Estou com o seguinte problema: ${problema}. ${detalhes ? "Detalhes: " + detalhes : ""}`;
-
-      const numeroWhatsApp = "5521993825550"; // seu número com DDI
-      const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
-
-      window.open(url, "_blank");
-    });
-  </script>
 
 </body>
 </html>
