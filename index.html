@@ -1,65 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Click Suporte</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
     }
 
     header {
-      background-color: #1d1d1d;
-      color: white;
-      padding: 20px;
+      background-color: #1c1c1c;
+      padding: 20px 0;
       text-align: center;
     }
 
     header img {
-      max-width: 200px;
+      max-width: 180px;
       height: auto;
     }
 
     .container {
-      padding: 30px;
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 0 20px;
       text-align: center;
     }
 
     h1 {
-      color: #1d1d1d;
+      font-size: 2.2rem;
+      color: #1c1c1c;
+      margin-bottom: 15px;
     }
 
     p {
-      color: #333;
-      font-size: 18px;
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 30px;
     }
 
     .whatsapp-button {
       background-color: #25D366;
       color: white;
-      padding: 15px 25px;
+      padding: 15px 30px;
+      font-size: 1.1rem;
+      font-weight: 600;
       text-decoration: none;
-      font-size: 20px;
       border-radius: 8px;
-      display: inline-block;
-      margin-top: 20px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: background 0.3s ease;
     }
 
     .whatsapp-button:hover {
       background-color: #1ebe5b;
     }
 
+    .whatsapp-button img {
+      width: 24px;
+      height: 24px;
+    }
+
     footer {
-      background-color: #1d1d1d;
-      color: white;
+      background-color: #1c1c1c;
+      color: #ccc;
       text-align: center;
       padding: 15px;
+      font-size: 0.9rem;
       position: fixed;
       bottom: 0;
       width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 30px 15px;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      .whatsapp-button {
+        font-size: 1rem;
+        padding: 12px 20px;
+      }
     }
   </style>
 </head>
@@ -69,11 +104,14 @@
     <img src="logotipo.png" alt="Logo Click Suporte">
   </header>
 
-  <div class="container">
-    <h1>Suporte Técnico Especializado</h1>
-    <p>Precisa de ajuda com seu computador, sistema ou rede? Clique no botão abaixo e fale diretamente conosco pelo WhatsApp.</p>
-    <a class="whatsapp-button" href="https://wa.me/5521993825550" target="_blank">Solicitar Suporte</a>
-  </div>
+  <main class="container">
+    <h1>Atendimento Técnico Especializado</h1>
+    <p>Problemas com seu computador, sistema ou rede? Clique abaixo e fale diretamente com nossa equipe pelo WhatsApp. Atendimento rápido e profissional.</p>
+    <a class="whatsapp-button" href="https://wa.me/5521993825550" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/220/220236.png" alt="WhatsApp">
+      Falar com Suporte
+    </a>
+  </main>
 
   <footer>
     &copy; 2025 Click Suporte. Todos os direitos reservados.
